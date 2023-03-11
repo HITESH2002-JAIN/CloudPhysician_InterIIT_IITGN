@@ -67,8 +67,7 @@ The pipeline is built upon multiple object detection model and image processing 
 ## Contact
 
 * [Ary Pratap Singh](https://www.linkedin.com/in/ary-pratap-singh-73b329207?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BebLXi%2BlvTOyRhTQqbZAXSA%3D%3D)
-* [Mahesh Abhale](https://www.linkedin.com/in/mahesh-abhale-5754861bb?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BQ3R47rUvTJagFaCWNtl0vA%3D%3D)
-* [Bhuvesh Jaiswal](https://www.linkedin.com/in/bhuvesh-jaiswal-43b521202?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BS%2Ffzlvg%2FQu%2B3zRvayXAdoA%3D%3D)
+
 
 * Project Link: [https://github.com/Virtual Assistant](https://github.com/AryPratap/BOT-GP-53.git)
 
