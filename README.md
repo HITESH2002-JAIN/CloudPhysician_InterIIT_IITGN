@@ -39,5 +39,11 @@ pip --version
 ```
 git --version
 ```
+- Clone the repository and install the dependencies from the requirements.txt file
+```
+git clone https://github.com/AryPratap/CloudPhysician_InterIIT.git
+cd CloudPhysician_InterIIT
+pip install -r requirements.txt
+```
 
 
