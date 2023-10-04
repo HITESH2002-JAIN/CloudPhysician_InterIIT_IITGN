@@ -1,0 +1,6 @@
+numpy
+sklearn
+scipy
+easyocr
+pandas 
+torch
