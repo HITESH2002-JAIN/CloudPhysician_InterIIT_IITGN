@@ -45,5 +45,29 @@ git clone https://github.com/AryPratap/CloudPhysician_InterIIT.git
 cd CloudPhysician_InterIIT
 pip install -r requirements.txt
 ```
-
-
+### Code structure
+```
+CloudPhysician_InterIIT
+│   README.md
+│   requirements.txt
+│   pipeline.ipynb
+└─── monitor extraction model
+|     └─── F1_curve.png
+|     └─── PR_curve.png
+|     └─── P_curve.png
+|     └─── R_curve.png
+|     └─── confusion_matrix.png
+|     └─── results.png
+|     └─── test_image.jpeg
+|     └─── README.md
+└─── feature extraction model    
+      └─── F1_curve.png
+      └─── PR_curve.png
+      └─── P_curve.png
+      └─── R_curve.png
+      └─── confusion_matrix.png
+      └─── results.png
+      └─── test_image.jpeg
+      └─── README.md
+      └─── feature_model_training.ipynb
+```
