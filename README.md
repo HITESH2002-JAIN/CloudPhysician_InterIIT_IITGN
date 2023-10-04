@@ -114,8 +114,10 @@ After cloning the YOLOv7 offical repo and setting up the model weights and datas
 python train.py --device 0 --batch-size 8 --epochs 50 --img 640 640 --data data/custom_data.yaml --hyp data/hyp.scratch.custom.yaml --cfg cfg/training/custom_yolov7.yaml --weights last.pt --name yolov7-custom
 ```
 #### Model output
-The model outputs the bounding boxes of the individual features present in the monitor image. Below image shows the predicted bounding boxes of the individual vitals present in the monitor screen.
+The model outputs the bounding boxes of the individual features present in the monitor image. Below image shows the predicted bounding boxes of the individual vitals present in the monitor screen. For a particular object detected multiple times in the image, the abject with highest confidence score is considered. 
 <br>These are the corresponding vitals:- <b>"HR", "SBP", "DBP", "MAP", "SPO2", "RR", "HR_W", "RR_W",  "SPO2_W"</b>
 <br> 
 <br>
 ![feature](https://github.com/AryPratap/CloudPhysician_InterIIT/blob/main/icons/feature.png)
+
+### Text Recognition and HR-Graph Digitization
