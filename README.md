@@ -89,3 +89,15 @@ The pipeline takes input images of the monitor with background as well and outpu
 ```
 "HR", "SBP", "DBP", "MAP", "SPO2", "RR", "HR_W", "RR_W",  "SPO2_W"
 ```
+
+### Monitor Detection Model
+A pre-trained YOLOv7 was fine-tuned on the 2000 images of monitor segmentation dataset upto 40 epochs. <br>
+#### Training details
+Cloning the offical YOLOv7 repository and store the corresponding model weights file along with dataset into the respective folder as mentioned in the YOLOv7 repo instructions. 
+```
+git clone https://github.com/WongKinYiu/yolov7
+
+python train.py --device 0 --batch-size 8 --epochs 50 --img 640 640 --data data/custom_data.yaml --hyp data/hyp.scratch.custom.yaml --cfg cfg/training/custom_yolov7.yaml --weights last.pt --name yolov7-custom
+```
+#### Model output
+The model predicts the bounding boxes of the monitor screen from the original image and we get the final cropped monitor image to be passed on to the next stage of pipeline. 
