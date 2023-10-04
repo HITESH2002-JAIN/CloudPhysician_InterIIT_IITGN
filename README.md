@@ -104,3 +104,18 @@ The model predicts the bounding boxes of the monitor screen from the original im
 <br>
 <br>
 ![Monitor Detection](https://github.com/AryPratap/CloudPhysician_InterIIT/blob/main/icons/monitor_detection.png)
+
+### Feature Extraction Model
+This model recieves the cropped monitor image from the previous model, and its aim is to detect the bounding boxes of the individual vital features on the monitor as mentioned earlier. YOLOv7 model was trained on the feature extraction dataset of 1000 images, upto 50 epochs. 
+<br> 
+#### Training details
+After cloning the YOLOv7 offical repo and setting up the model weights and dataset storage run the below command for training. 
+```
+python train.py --device 0 --batch-size 8 --epochs 50 --img 640 640 --data data/custom_data.yaml --hyp data/hyp.scratch.custom.yaml --cfg cfg/training/custom_yolov7.yaml --weights last.pt --name yolov7-custom
+```
+#### Model output
+The model outputs the bounding boxes of the individual features present in the monitor image. Below image shows the predicted bounding boxes of the individual vitals present in the monitor screen.
+<br>These are the corresponding vitals:- <b>"HR", "SBP", "DBP", "MAP", "SPO2", "RR", "HR_W", "RR_W",  "SPO2_W"</b>
+<br> 
+<br>
+![feature](https://github.com/AryPratap/CloudPhysician_InterIIT/blob/main/icons/feature.png)
