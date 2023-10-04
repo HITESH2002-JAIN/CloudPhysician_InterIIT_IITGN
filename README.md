@@ -102,7 +102,8 @@ git clone https://github.com/WongKinYiu/yolov7
 python train.py --device 0 --batch-size 8 --epochs 50 --img 640 640 --data data/custom_data.yaml --hyp data/hyp.scratch.custom.yaml --cfg cfg/training/custom_yolov7.yaml --weights last.pt --name yolov7-custom
 ```
 #### Model output
-The model predicts the bounding boxes of the monitor screen from the original image and we get the final cropped monitor image to be passed on to the next stage of pipeline. 
+The model predicts the bounding boxes of the monitor screen from the original image and we get the final cropped monitor image to be passed on to the next stage of pipeline. <br>
+The <i><b>monitor extraction model</i></b> folder contains the model evaluation results including Precision, Recall, F1-score and other results.  
 <br>
 <br>
 ![Monitor Detection](https://github.com/AryPratap/CloudPhysician_InterIIT/blob/main/icons/monitor_detection.png)
@@ -116,7 +117,8 @@ After cloning the YOLOv7 offical repo and setting up the model weights and datas
 python train.py --device 0 --batch-size 8 --epochs 50 --img 640 640 --data data/custom_data.yaml --hyp data/hyp.scratch.custom.yaml --cfg cfg/training/custom_yolov7.yaml --weights last.pt --name yolov7-custom
 ```
 #### Model output
-The model outputs the bounding boxes of the individual features present in the monitor image. Below image shows the predicted bounding boxes of the individual vitals present in the monitor screen. For a particular object detected multiple times in the image, the abject with highest confidence score is considered. 
+The model outputs the bounding boxes of the individual features present in the monitor image. Below image shows the predicted bounding boxes of the individual vitals present in the monitor screen. For a particular object detected multiple times in the image, the abject with highest confidence score is considered. <br>
+The <i><b>feature extraction model</i></b> folder contains the model evaluation results including Precision, Recall, F1-score and other results.  
 <br>These are the corresponding vitals:- <b>"HR", "SBP", "DBP", "MAP", "SPO2", "RR", "HR_W", "RR_W",  "SPO2_W"</b>
 <br> 
 <br>
