@@ -101,3 +101,6 @@ python train.py --device 0 --batch-size 8 --epochs 50 --img 640 640 --data data/
 ```
 #### Model output
 The model predicts the bounding boxes of the monitor screen from the original image and we get the final cropped monitor image to be passed on to the next stage of pipeline. 
+<br>
+<br>
+![Monitor Detection](https://github.com/AryPratap/CloudPhysician_InterIIT/blob/main/icons/monitor_detection.png)
