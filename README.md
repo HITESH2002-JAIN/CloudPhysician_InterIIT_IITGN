@@ -45,6 +45,8 @@ git clone https://github.com/AryPratap/CloudPhysician_InterIIT.git
 cd CloudPhysician_InterIIT
 pip install -r requirements.txt
 ```
+
+After completing the above steps, refer to <i><b>pipeline.ipynb</i></b> file which contains detailed comments on how setup and run the pipeline
 ### Code structure
 ```
 CloudPhysician_InterIIT
