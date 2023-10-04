@@ -71,3 +71,16 @@ CloudPhysician_InterIIT
       └─── README.md
       └─── feature_model_training.ipynb
 ```
+
+### Data sources
+#### Monitor segmentation dataset:
+A dataset containing the segmentation boundaries  for the monitors in the image, a total of 2000 images.
+#### Feature extraction dataset  
+The monitors present in the images can be grouped into 4 
+types, based on some screen characteristics. This dataset can consist of monitor images with bounding box labels for each of the particular features present in the monitor screen including, Heart Rate, SpO2, RR, Systolic Blood Pressure, Diabolic Blood Pressure, MAP and heart rate graph. 
+
+### ML Pipeline 
+The ML pipeline consist of two YOLOv7 models for monitor segmentation and feature extractions from the medical images. Further OCR and DBScan clustering step is applied for accurate text recognition from the predicted feature images. 
+<br>
+The complete pipeline in demonstrated in the below figure. 
+
