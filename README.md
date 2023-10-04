@@ -84,3 +84,8 @@ The ML pipeline consist of two YOLOv7 models for monitor segmentation and featur
 <br>
 The complete pipeline in demonstrated in the below figure. 
 ![complete ML Pipeline](https://github.com/AryPratap/CloudPhysician_InterIIT/blob/main/icons/ML_pipeline.png)
+<br>
+The pipeline takes input images of the monitor with background as well and outputs the following extracted vitals from the image. <br> 
+```
+"HR", "SBP", "DBP", "MAP", "SPO2", "RR", "HR_W", "RR_W",  "SPO2_W"
+```
