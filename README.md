@@ -146,3 +146,5 @@ Below the digitized graph from the original cropped image.
 <br>
 ![graph](https://github.com/AryPratap/CloudPhysician_InterIIT/blob/main/icons/graph.png)
 
+### Acknowledgement
+We would like to thank the Inter-IIT community at IIT Kanpur and CloudPhyisican company for evaluating our solution and providing us the opportunity to work on such a interesting computer vision problem statement. 
