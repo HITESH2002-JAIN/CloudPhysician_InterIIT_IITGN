@@ -125,3 +125,17 @@ The <i><b>feature extraction model</i></b> folder contains the model evaluation 
 ![feature](https://github.com/AryPratap/CloudPhysician_InterIIT/blob/main/icons/feature.png)
 
 ### Text Recognition and HR-Graph Digitization
+#### Text Recognition
+The individual feature images are cropped from the monitor screen and easyOCR text recognition was applied on them for text recognition followed by further text cleaning including bracket, slash removal etc. After running all the necessary functions of the pipeline, the pipeline functioning can be accesed by the <i><b>inference</i></b> function, which returns the predicted vitals from the medical images in the form of python dictionary. 
+<br>
+```
+# Running inference on test image 
+output = inference('/content/hcgbhavnagar_micu_mon--403_2022_5_18_7_20_0.jpeg') # Just enter the path of the test image 
+output:
+HR identified
+SBP identified
+DBP identified
+RR identified
+{'HR': '71', 'SBP': '119', 'DBP': '66', 'RR': '18'}
+```
+
