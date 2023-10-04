@@ -138,6 +138,11 @@ DBP identified
 RR identified
 {'HR': '71', 'SBP': '119', 'DBP': '66', 'RR': '18'}
 ```
-#### Graph Digitization
-
+#### Heart Rate Graph Digitization
+After getting the cropped graph image from the original image through the pipeline, a ensembling approach combining k-means clustering, thresholding, masking, DBSCAN clustering was applied to achieve the digitized graph on a standard scale.
+<br>
+Below the digitized graph from the original cropped image. 
+<br>
+<br>
+![graph](https://github.com/AryPratap/CloudPhysician_InterIIT/blob/main/icons/graph.png)
 
